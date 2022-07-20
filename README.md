@@ -1,1 +1,1 @@
-# pdf-merger
+# PDF Merger - Thinh Le
