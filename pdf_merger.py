@@ -5,9 +5,6 @@ from sys import argv
 src_path = argv[1]
 dest_path = argv[2]
 
-print(src_path)
-print(dest_path)
-
 merger = PyPDF2.PdfFileMerger()
 
 directory = os.fsencode(src_path)
@@ -19,4 +16,5 @@ for file in os.listdir(directory):
 filename = dest_path + './' + 'merged.pdf'
 merger.write(filename)
 merger.close()
+print('Save as: ' + dest_path)
 print('Merge complete')
