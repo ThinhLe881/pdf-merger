@@ -6,7 +6,6 @@ def main():
     parser = argparse.ArgumentParser(description='PDF Merger')
     parser.add_argument('src_path', metavar='src_path', type=str, help='The directory where the pdfs are placed')
     parser.add_argument('dest_path', metavar='dest_path', type=str, help='The directory where the merged pdf will be placed')
-
     args = parser.parse_args()
 
     src_path = args.src_path
